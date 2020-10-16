@@ -1,5 +1,3 @@
-#Markdown
-
 # Happy
 
 **Projeto Web que Conecta pessoas generosas com crianças carentes, desenvolvido na NLW3 da Rocketseat 2020**
@@ -8,4 +6,4 @@
 
 ![mapahappy2](https://user-images.githubusercontent.com/65875860/96220487-332f9c00-0f5f-11eb-8ef2-72da9a4ffd2c.jpg)
 
-_Projeto em andamento_ dgsdev
+_Projeto em andamento_ **dgsdev**
