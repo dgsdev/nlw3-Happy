@@ -1,99 +1,113 @@
 #page-landing {
-    background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+  background: linear-gradient(329.54deg, #99ccff 0%, #3399ff 100%);
 
-    text-align: center;
-    min-height: 100vh;
-    
-    display: flex;
+  text-align: center;
+  min-height: 100vh;
+
+  display: flex;
 }
+
 #container {
-    margin: auto;
+  margin: auto;
 
-    width: min(90%, 112rem);
-    
+  width: 90%;
 }
-.location, h1, .visit p {
-    height: 16vh;
-    
-}
-#logo {
-    animation-delay: 50ms;
-}
-.location {
-    animation-delay: 100ms;
-}
-main h1 {
-    animation-delay: 150ms;
-    font-size: clamp(4rem, 8vw, 8.4rem);
-}
+
+.location,
+h1,
 .visit p {
-    animation-delay: 200ms;
+  height: 16vh;
 }
-.visit a {
-    width: 8rem;
-    height: 8rem;
-    background: #ffd666;
-    border: none;
-    border-radius: 3rem;
 
+#logo {
+  animation-delay: 50ms;
+}
+
+.location {
+  animation-delay: 100ms;
+}
+
+main h1 {
+  animation-delay: 150ms;
+  font-size: clamp(4rem, 8vw, 7rem);
+}
+
+.visit p {
+  animation-delay: 200ms;
+}
+
+.visit a {
+  width: 6rem;
+  height: 6rem;
+  background: #ffbb33;
+
+  border: none;
+  border-radius: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: auto;
+
+  transition: background 200ms;
+  animation-delay: 250ms;
+}
+
+.visit a:hover {  
+  background: #ffc34d;
+}
+
+/* desktop version */
+@media (min-width: 760px) {
+  #container {
+    padding: 5rem 2rem;
+    /* shorthand background: image repeat position / size */
+    background: url("../images/kids.png") no-repeat 80% /
+      clamp(60rem, 0vw, 0rem);
+  }
+
+  header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+  }
 
-    margin: auto;
-    
-    transition: background 200ms;
-    animation-delay: 250ms;
-}
-.visit a:hover {
-    background-color: #96feff;
-}
+  .location,
+  h1,
+  .visit p {
+    height: initial;
+    text-align: initial;
+  }
 
-/*desktop versão */
+  .location {
+    text-align: right;
+    font-size: 2rem;
+    line-height: 1.5;
+  }
 
-@media (min-width: 760px) {
-    #container {
-        padding: 5rem 2rem;
-        background: url("../images/bg.svg") no-repeat 80% / 
-        clamp(30rem, 40vw, 56rem);
-        
-    }
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;       
-    }
+  main h1 {
+    font-weight: bold;
+    line-height: 0.88;
 
-    .location, h1, .visit p {
-        height: initial;
-        text-align: initial;
-    }
-    .location {
-        text-align: right;
-        font-size: 2.4rem;
-        line-height: 1.5;
-    }
-    main h1 {
-       
-        font-weight: bold;
-        line-height: 0.88;
-        margin: clamp(1%, 9vh, 12%) 0 4rem;
-        width: min(320px, 80%);
+    margin: clamp(1%, 9vh, 12%) 0 4rem;
 
-    }
-    .visit {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .visit p {
-        font-size: 2.4rem;
-        line-height: 1.5;
-       
-        width: min(300px, 80%);
-    }
-    .visit a {
-        margin: initial;
-    }
+    width: min(300px, 80%);
+  }
 
+  .visit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .visit p {
+    font-size: 2rem;
+    line-height: 1.5;
+    width: clamp(20rem, 20vw, 30rem);
+  }
+
+  .visit a {
+    margin: initial;
+  }
 }
