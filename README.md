@@ -42,6 +42,6 @@ O Happy é uma aplicação que conecta pessoas à casas de acolhimento instituci
 
 ---
 
-by <a href="https://www.linkedin.com/in/dgsdouglaspinheiro/">dgsdev</a> na NLW3 Rockeatseat 2020
+by <a href="https://www.linkedin.com/in/dgsdouglaspinheiro/">dgsdev</a> na NLW3 Rocketseat 2020
 
 **dgsdev**
